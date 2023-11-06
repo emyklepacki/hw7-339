@@ -1,7 +1,7 @@
-var video = document.getElementById("player1");
+var video = document.querySelector("video");
 
 window.addEventListener("load", function() {
-	document.getElementById("player1").load();
+	document.querySelector("video").load();
 });
 
 document.querySelector("#play").addEventListener("click", function() {
@@ -13,6 +13,11 @@ document.querySelector("#pause").addEventListener("click", function() {
 });
 
 document.querySelector("#slower").addEventListener("click", function() {
-	video.pause();
+	video.playbackRate = 0.9;
 });
+
+document.querySelector("#faster").addEventListener("click", function() {
+	video.playbackRate = 1.1;
+});
+
 
