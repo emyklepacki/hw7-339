@@ -4,11 +4,15 @@ window.addEventListener("load", function() {
 	document.getElementById("player1").load();
 });
 
-document.querySelector("#play").addEventListener("click", () =>{
-	document.querySelector("video").play();
+document.querySelector("#play").addEventListener("click", function() {
+	video.play();
 });
 
 document.querySelector("#pause").addEventListener("click", function() {
+	video.pause();
+});
+
+document.querySelector("#slower").addEventListener("click", function() {
 	video.pause();
 });
 
