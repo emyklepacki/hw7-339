@@ -1,11 +1,14 @@
-var video;
+var video = document.getElementById("player1");
 
 window.addEventListener("load", function() {
-	console.log("Good job opening the window")
-
+	document.getElementById("player1").load();
 });
 
-// document.querySelector("#play").addEventListener("click", function() {
-// 	console.log("Play Video");
-// });
+document.querySelector("#play").addEventListener("click", () =>{
+	document.querySelector("video").play();
+});
+
+document.querySelector("#pause").addEventListener("click", function() {
+	video.pause();
+});
 
