@@ -9,6 +9,7 @@ window.addEventListener("load", function() {
 
 document.querySelector("#play").addEventListener("click", function() {
 	video.volume = (document.getElementById("slider").value)/100;
+	document.querySelector('#volume').innerHTML = video.volume;
 	
 	video.play();
 });
@@ -31,6 +32,7 @@ document.querySelector("#faster").addEventListener("click", function() {
 
 document.querySelector("#slider").addEventListener("input", function() {
 	video.volume = (document.getElementById("slider").value)/100;
+	document.querySelector('#volume').innerHTML = video.volume;
 });
 
 document.querySelector("#skip").addEventListener("click", function() {
