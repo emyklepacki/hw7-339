@@ -55,4 +55,9 @@ document.querySelector("#orig").addEventListener("click", function() {
 
 document.querySelector("#mute").addEventListener("click", function() {
 	video.muted = !video.muted;
+	if (document.querySelector('#mute').innerHTML == 'Mute'){
+		document.querySelector('#mute').innerHTML = 'Unmute'
+	} else {
+		document.querySelector('#mute').innerHTML = 'Mute'
+	}
 });
